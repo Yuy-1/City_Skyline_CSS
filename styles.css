@@ -19,6 +19,11 @@ body {
   height: 100%;
 }
 
+.background-buildings, .foreground-buildings{
+  top: 0;
+  position: absolute;
+}
+
 .bb1 {
   display: flex;
   flex-direction: column;
@@ -70,10 +75,11 @@ body {
 }
 
 .foreground-buildings {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
   width: 100%;
   height: 100%;
-  position: absolute;
-  top: 0;
 }
 
 .fb1 {
