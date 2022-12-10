@@ -4,6 +4,11 @@ body {
   overflow: hidden;
 }
 
+* {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
 :root {
   --building-color1: #aa80ff;
   --building-color2: #66cc99;
@@ -11,17 +16,14 @@ body {
   --building-color4: #538cc6;
 }
 
-.background-buildings {
+.background-buildings, .foreground-buildings {
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: space-evenly;
-  width: 100%;
-  height: 100%;
-}
-
-.background-buildings, .foreground-buildings{
-  top: 0;
   position: absolute;
+  top: 0;
 }
 
 .bb1 {
@@ -96,12 +98,16 @@ body {
 .fb4 {
   width: 8%;
   height: 45%;
+  position: relative;
+  left: 10%;
   background-color: var(--building-color1);
 }
 
 .fb5 {
   width: 10%;
   height: 33%;
+  position: relative;
+  right: 10%;
   background-color: var(--building-color2);
 }
 
