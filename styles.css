@@ -5,7 +5,6 @@ body {
 }
 
 * {
-  border: 1px solid black;
   box-sizing: border-box;
 }
 
@@ -40,6 +39,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.sky {
+  background: radial-gradient(
+  circle closest-corner at 15% 15%,
+    #ffcf33,
+    #ffcf33 20%,
+    #ffff66 21%,
+    #bbeeff 100%
+  )
 }
 
 /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
@@ -287,4 +296,8 @@ body {
           var(--window-color3) 10%,
           var(--window-color3) 30%
   );
+}
+
+@media (max-width: 1000px){
+
 }
